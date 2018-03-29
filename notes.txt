@@ -1,6 +1,3 @@
-american cleaning and property services
-
-APS
 
 at the bottom of the website designed by darryl at american web design link 
 
@@ -9,19 +6,42 @@ account info password: 103150
 
 
 account settings page: https://productivity.godaddy.com/settings?isc=gdbb2582&utm_source=gdocp&utm_medium=email&utm_campaign=en-US_x_email_base_gd&utm_content=180324_2582_x_x_x_x_gdbb2582_1Xo6SsgIm5wFxtXke2Mkce#/mailbox/7389477
+i
 
+*change pictures to fit topics
 
-try to find a free use american flag
-
-2972x 1096
-
-#d2202a
-
-change pictures to fit topics
-
-change font size bigger on slide show
-change style on the landing page
+*change font size bigger on slide show
+*change style on the landing page
 
 check from dennis
 
 forward recepits to Karen
+
+align items on about us page.
+make pictured about same size
+make rounded borders
+
+
+*all pages need same image size
+
+*all pages need logo in the top
+
+family page needs to be updated
+
+set up php to email dennis
+
+*american flag for tab icons
+
+grammer on main page
+
+NO TEXT ON PAGES
+
+auto scroll
+
+
+yvkwozkxerys
+
+
+$71
+
+IP address:107.180.48.248

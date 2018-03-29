@@ -73,6 +73,7 @@
     text-align: center;
     padding: 14px 16px px 0px;
     text-decoration: none;
+    text-shadow: 2px 2px 2px #ff0000;
 
 }
 
@@ -172,7 +173,7 @@ position: fixed;
 z-index:100;
 top:0;
 right:0;
-background-color: #a33029;
+background-color: #6f79f7;
 opacity: 0.9;
 overflow-x: hidden;
 padding-top: 60px;
@@ -419,6 +420,63 @@ slideUp
 	}
 }
 
+
+
+/*
+==============================================
+fadeIn
+==============================================
+*/
+
+.fadeIn{
+	animation-name: fadeIn;
+	-webkit-animation-name: fadeIn;
+
+	animation-duration: 1.5s;
+	-webkit-animation-duration: 1.5s;
+
+	animation-timing-function: ease-in-out;
+	-webkit-animation-timing-function: ease-in-out;
+
+	visibility: visible !important;
+}
+
+@keyframes fadeIn {
+	0% {
+		transform: scale(0);
+		opacity: 0.0;
+	}
+	60% {
+		transform: scale(1.0);
+	}
+	80% {
+		transform: scale(1);
+		opacity: 1;
+	}
+	100% {
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes fadeIn {
+	0% {
+		-webkit-transform: scale(0);
+		opacity: 0.0;
+	}
+	60% {
+		-webkit-transform: scale(1.0);
+	}
+	80% {
+		-webkit-transform: scale(1.0);
+		opacity: 1;
+	}
+	100% {
+		-webkit-transform: scale(1);
+		opacity: 1;
+	}
+}
+
 /*
 
 
@@ -489,13 +547,25 @@ body{
   padding-bottom:30px;
 }
 
+
+
 /*p{
   margin: 5% 10% 20% 10%;
   color: white;
 }*/
 
+.sideBySide{
+  display: inline-block;
+  width: 150px;
+  height: 75px;
+  margin: 10px;
+}
+
 .contentTop{
-  margin: 0 10% 10% 10%;
+  text-align: center;
+  /*margin: 0 25% 3% 25%;*/
+  margin: 0 10% 3% 10%;
+
   color: white;
   text-shadow: 1px 1px 1px #000000;
   padding-top:100px;
@@ -525,14 +595,14 @@ body{
 
 /*Footer*/
 .footer {
-  opacity: 0.7;
+  opacity: 1;
   color: #FFFFFF;
-  position: static;
+  position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
     height: 30px;
-    margin-bottom: -30px;
+    margin-bottom: 0px;
     background-color: #6f79f7;
     text-align: center;
     font-weight: normal;
@@ -566,6 +636,17 @@ input[type=text], select, textarea{
     resize: vertical;
 }
 
+input[type=email], select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
 input[type=submit] {
     background-color: #000000;
     color: white;
@@ -584,7 +665,46 @@ input[type=submit]:hover {
     color:white;
     width:100%;
     border-radius: 5px;
-    background-color: #a33029;
+    background-color: #657fe3;
     padding: 20px;
     box-shadow: 0.1px 0.1px 0px #000000;
+}
+
+
+/*side nav*/
+
+
+.sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right:0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
 }

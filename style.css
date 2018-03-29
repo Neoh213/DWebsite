@@ -3,6 +3,43 @@ body{
   overflow:hidden;
 }
 
+#main{
+margin-left: 250px;
+text-align: center;
+}
+
+.landingPageContent{
+  font-weight: bold;
+  font-size: 30px;
+  padding: 0 10% 0 10%;
+  font-style: italic;
+  text-align: center;
+  color:white;
+  margin-left: 250px;
+  text-shadow: 2px 2px 2px #ff0000;
+}
+
+.open{
+  color:white;
+  margin-left: 0px;
+}
+
+.titlePage{
+  color:white;
+  font-size: 60px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px #ff0000;
+
+}
+
+.titlePageSmall{
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  text-shadow: 2px 2px 2px #000000;
+}
+
+
 .button-container {
     width: 100%;
 
@@ -44,7 +81,8 @@ button{
     height: 200px;
     float: left;
     background: lightgray;
-      margin: 60px
+      margin: 60px;
+
 
 
 }
@@ -144,4 +182,41 @@ margin: 0 auto 0 auto;
 @-o-keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
+}
+
+.sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right:0;
+    background-color: #1c2565;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    text-shadow: 2px 2px 2px #000000;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
 }

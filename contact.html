@@ -15,54 +15,34 @@
       <li class="right"><a href="contact.html">CONTACT</a></li>
       <li class="right"><a href="about.html">ABOUT</a></li>
       <li class="right"><a href="industries.html">INDUSTRIES</a></li> -->
-      <a class = "logoLink" href = "index.html"><img class = "logo" src = "logo.jpg"  height="40" width="150" alt = "jk logo"></a>
+      <a class = "logoLink" href = "index.html"><img class = "logo" src = "flag.jpg"  height="40" width="100" alt = "jk logo"></a>
       <div class="dropdown">
-    <a href = "contact.html" class = "dropbtn"  id ="contact">CONTACT</a>
+        <div class="dropdown">
+            <a href = "contact.html" class = "dropbtn"  id ="contact">CONTACT</a>
+      </div>
     </div>
-      <div class="dropdown">
-        <button class="dropbtn">DRONE OPERATIONS
-        </button>
-        <div class="dropdown-content">
-          <a href="#">INSPECTION</a>
-          <a href="#">MAPPING</a>
-        </div>
+        <div class="dropdown">
+          <div class="dropdown">
+            <a href = "landscapingAboutUs.html" class = "dropbtn"  id ="contact">ABOUT US</a>
       </div>
-      <div class="dropdown">
-        <button class="dropbtn">CONSTRUCTION
-        </button>
-        <div class="dropdown-content">
-          <a href="#">CONSTRUCTION MANAGEMENT</a>
-          <a href="#">MAINTENANCE</a>
-          <a href="#">MODIFICATION AND INSTALLATION</a>
-          <a href="#">NEW BUILD CONSTRUCTION</a>
         </div>
-      </div>
+        <!--
       <div class="dropdown">
-        <button class="dropbtn">PROGRAM MANAGEMENT
-        </button>
-        <div class="dropdown-content">
-          <a href="#">CONTRACT ADMINISTRATION</a>
-        </div>
-      </div>
-
-      <div class="dropdown">
-        <button class="dropbtn">INDUSTRIES
-        </button>
-        <div class="dropdown-content">
-          <a href="#">CELL INDUSTRY</a>
-          <a href="#">ENERGY</a>
-          <a href="#">TRANSPORTATION INDUSTRY</a>
-          <a href="#">UTILITY INDUSTRY</a>
-        </div>
-      </div>
-
-      <div class = "move">
-      <a href = "#" onclick = "openSlideMenu()">
-        <div class = "lines"></div>
-        <div class = "lines"></div>
-        <div class = "lines"></div>
-      </a>
+        <div class="dropdown">
+          <a href = "contact.html" class = "dropbtn"  id ="contact">GALLERY</a>
     </div>
+      </div>
+    -->
+
+    <div class = "move">
+    <a href = "#" onclick = "openSlideMenu()">
+      <div class = "lines"></div>
+      <div class = "lines"></div>
+      <div class = "lines"></div>
+    </a>
+  </div>
+
+
 
   </div>
     </div>
@@ -71,67 +51,45 @@
 <h1 style = "color:white; text-shadow: 1px 1px 1px #000000;">Send Us A Message<h2>
 
 <div class = "contactForm">
-<form action="/action_page.php">
-  <p style = "text-align: center">First name:</p>
-  <input type="text" value=""> <p style = "text-align: center">Last name:</p>
-  <input type="text" name="lastname" value="">
-  <p style = "text-align: center">Email:</p>
- <input type="text" name="email"> <br>
- <label for="subject"><p style = "text-align: center">Comments:</p></label>
-<textarea id="subject" name="subject" placeholder="" style="height:200px"></textarea><br>
-  <input type="submit" value="Submit">
-</form>
+  <form name="contact-form" method="post" action="email.php">
+
+                    <label for="InputName1">Name</label>
+                    <input type="text" name="name" class="form-control" id="InputName1" required="">
+
+
+                    <label for="InputEmail1">Email</label>
+                    <input type="email" name="email" class="" id="InputEmail1" required="">
+
+                    <label for="InputSubject">Subject</label>
+                    <input type="text" name="subject" class="form-control" id="InputSubject">
+
+
+                    <label for="InputTextarea">Message</label>
+                    <textarea name="message" class="form-control" id="InputTextarea" rows="5" required=""></textarea>
+
+
+                  <input type="submit" name="submit" ></button>
+                </form>
 
 </div>
 
 <br>
-<h1 style = "color:white; text-shadow: 1px 1px 1px #000000;" >Phone Number: <a class = "phoneNumber" style = "color:white" href="tel:1-562-867-5309">919-285-4607</a><h2>
-<h1 style = "color:white; text-shadow: 1px 1px 1px #000000;" >Email: <a href = "mailto:info@JerniganKester.com" style = "color:white" >info@JerniganKester.com</a><h2>
+<h1 style = "color:white; text-shadow: 1px 1px 1px #000000;" >Phone Number: <a class = "phoneNumber" style = "color:white" href="tel:1-919-417-1120">919-417-1120</a><h2>
+<h1 style = "color:white; text-shadow: 1px 1px 1px #000000;" >Email: <a href = "mailto:drcrawford@americancleaningandpropertyservices.com" style = "color:white" >drcrawford@americancleaningandpropertyservices.com</a><h2>
 
 </div>
 
 
 <div id = "side-menu" class = "side-nav">
   <a href = "#" class = "btn-close" onclick ="closeSlideMenu()"> &times;</a>
-    <div class="dropdown left">
-  <a href = "contact.html" class = "dropbtn" >CONTACT</a>
+  <div class="dropdown left">
+<a href = "contact.html" class = "dropbtn" style = "text-decoration:none;">ABOUT US &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
 </div>
-  <div class="dropdown left">
-    <button class="dropbtn">DRONE OPERATIONS
-    </button>
-    <div class="dropdown-content">
-      <a href="#">INSPECTION</a>
-      <a href="#">MAPPING</a>
-    </div>
-  </div>
-  <div class="dropdown left">
-    <button class="dropbtn">CONSTRUCTION
-    </button>
-    <div class="dropdown-content">
-      <a href="#">CONSTRUCTION MANAGEMENT</a>
-      <a href="#">MAINTENANCE</a>
-      <a href="#">MODIFICATION AND INSTALLATION</a>
-      <a href="#">NEW BUILD CONSTRUCTION</a>
-    </div>
-  </div>
-  <div class="dropdown left">
-    <button class="dropbtn">PROGRAM MANAGEMENT
-    </button>
-    <div class="dropdown-content">
-      <a href="#">CONTRACT ADMINISTRATION</a>
-    </div>
-  </div>
 
-  <div class="dropdown left">
-    <button class="dropbtn">INDUSTRIES
-    </button>
-    <div class="dropdown-content">
-      <a href="#">CELL INDUSTRY</a>
-      <a href="#">ENERGY</a>
-      <a href="#">TRANSPORTATION INDUSTRY</a>
-      <a href="#">UTILITY INDUSTRY</a>
-    </div>
-  </div>
+    <div class="dropdown left">
+  <a href = "contact.html" class = "dropbtn" style = "text-decoration:none;">CONTACT</a>
+</div>
+
 
 </div>
 

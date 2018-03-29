@@ -1,37 +1,45 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>American Something</title>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
 
-    <!-- Latest compiled and minified CSS -->
+</head>
+<body>
+<span class = "open" style="font-size:30px;cursor:pointer;" onclick="openNav()">&#9776; open</span>
+<div id = "main">
+  <p class = "titlePage">American Cleaning and Property Services</p>
+  <p class = "titlePageSmall"> Click on our services on the left</p>
+</div>
 
-<link rel="stylesheet" type="text/css" href="style.css">
+<div class = "landingPageContent">
+  We are a group of families that have combined our God-given talents to bring our customers more services under one company, at fair prices, and with great customer service. We take pride in what we do and in the satisfaction of our customers. Our deepest desire is to go into a job to help our customers accomplish what they have in mind and while earning their trust and making new friends.
+</div>
 
-  </head>
-  <body>
+<div id="mySidenav" class="sidenav">
 
-    <div class="menu-container">
-        <div class="button-container">
-          <button type="button" class="button outside button-hover ">Click here for Landscaping</button>
-          <button type="button" class="button outside button-hover">Click here for Carpet Cleaning</button>
-          <button type="button" class="button outside button-hover">Click here for Painting and Pressure Washing!</button>
+  <a href="landscaping.html" target="_blank">Landscaping</a>
+  <a href="carpetcleaning.html" target="_blank">Carpet Cleaning</a>
+  <a href="powerWashing.html" target="_blank">Painting and Pressure Washing</a>
+  <a href="R&D.html" target="_blank">Rennovation and Design</a>
+  <a href="commercialC.html" target="_blank">Commerical Cleaning and Maintenence</a>
+  <a href="#">Commercial Property Management (coming soon)</a>
+</div>
 
-        </div>
-    </div>
-    <div class="menu-container">
-        <div class="button-container">
 
-          <button type="button" class="button outside button-hover ">Click here for Rennovation and Design</button>
-          <button type="button" class="button outside button-hover ">Click here for Commercial Cleaning and Maintenence</button>
-          <button type="button" class="button outside button-hover ">Click here for Commercial Property Management</button>
+<script>
+/* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+}
 
-        </div>
-    </div>
+/* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft = "0";
+}
+</script>
 
-<!-- Latest compiled and minified JavaScript -->
-
-  </body>
-
+</body>
 </html>
