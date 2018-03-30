@@ -1,6 +1,6 @@
 body{
   background-image: url("flag.jpg");
-  overflow:hidden;
+  /*overflow:hidden;*/
 }
 
 #main{

@@ -1,3 +1,5 @@
+UPDATE LANDING PAGE
+
 
 at the bottom of the website designed by darryl at american web design link 
 
@@ -28,7 +30,7 @@ make rounded borders
 
 family page needs to be updated
 
-set up php to email dennis
+*set up php to email dennis
 
 *american flag for tab icons
 
